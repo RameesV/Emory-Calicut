@@ -31,7 +31,7 @@ function Service() {
             id:3,
             src: ImgJBrow,
             title: "Jasbro",
-            subHeading: 'Cleaning Service',
+            subHeading: 'Educational and Placement Consultant',
             description: "We act with integrity and honesty in accordance with the highest academic, professional and ethical standards.",
             pageLink: '/jasbro',
             buttonName: 'Learn More'

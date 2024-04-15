@@ -1,0 +1,255 @@
+.home-page {
+    background: #f8f9fa;
+}
+
+.offcanvas {
+    height: 35vh;
+}
+
+.values-section {
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .col {
+        padding: 8px;
+
+        .card {
+            border: 2px solid;
+            background-color: #fff;
+            border-radius: 20px;
+            height: 100%;
+
+            .card-img-top {
+                height: 200px;
+                object-fit: cover;
+                border-radius: 20px;
+                padding: 4px;
+            }
+
+            .card-body {
+                margin-bottom: 26px;
+            }
+
+            .card-link {
+                text-decoration: none;
+                color: #000;
+                margin-left: 16px;
+                padding: 6px;
+                border-radius: 8px;
+                border: 1px solid #000;
+                margin-bottom: 8px;
+
+            }
+        }
+
+        .card:hover {
+            background-color: #000;
+            color: #fff;
+
+            .card-link {
+                border: 1px solid #fff;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.mvv-section {
+
+    .card {
+        background-color: transparent;
+        display: flex;
+        align-items: flex-start;
+        border: none;
+        text-align: left;
+
+        .card-title {
+            text-decoration: underline;
+            text-decoration-color: #be1e11;
+            padding: 0 0 0 12px;
+        }
+
+        .card-text {
+            border-left: 2px solid #be1e11;
+            padding: 0 0 0 12px;
+        }
+
+        .card-link {
+            display: none;
+        }
+    }
+}
+
+.right-col {
+    background-color: #be1e11;
+
+    .card {
+        .card-title {
+            color: #fff79a;
+        }
+
+        .card-text {
+            color: #fff;
+            border-left: 2px solid #fff79a;
+        }
+    }
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+.service-section {
+    background-image: url('../../assets/Images/servicebg2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 64px 0 0 0;
+    border-radius: 30px;
+    padding: 64px 32px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: #fff;
+
+    h2,
+    p {
+        z-index: 3;
+    }
+
+    .card {
+        color: #fff;
+    }
+
+    .service-description-main {
+        width: 60%;
+        text-align: center;
+    }
+
+    .card-body {
+        padding: 1rem 0;
+    }
+
+    h2,
+    p {
+        text-align: center;
+    }
+}
+
+.service-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    top: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+// Featured courses section
+.featured-courses-section {
+    background-color: #f8f9fa;
+
+    h2 {
+        color: #A09EAA;
+        font-family: "Poppins", Sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 8px;
+    }
+
+    .section-heading {
+        h4 {
+            font-size: 35px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+
+    .featured-courses {
+        .row {
+            .col {
+                padding: 8px;
+
+                .card {
+                    background: #fff;
+                    height: 100%;
+                    align-items: center;
+
+                    .card-img-top {
+                        height: 200px;
+                    }
+
+                    .card-body {
+                        .card-title {
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .card-link {
+                        border-style: solid;
+                        border-radius: 025px 025px 0px 025px;
+                        padding: 12px 48px 12px 48px;
+                        text-decoration: none;
+                        margin-bottom: 12px;
+                    }
+
+                    .card-link:hover {
+                        background-color: #0d6efd;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .service-section {
+        padding: 32px 4px;
+    }
+
+    .values-section {
+        .col {
+            .card {
+                .card-img-top {
+                    height: auto;
+                }
+
+                .card-body {
+                    padding: 12px;
+                }
+            }
+        }
+    }
+
+    .featured-courses {
+        .row {
+            .col {
+                .card {
+                    .card-img-top {
+                        height: 100px !important;
+                    }
+
+                    .card-link {
+                        padding: 8px 24px 8px 24px !important;
+                    }
+                }
+            }
+        }
+    }
+}

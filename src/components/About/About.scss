@@ -1,0 +1,168 @@
+// Homepage About Section 
+.content-1-grids {
+    .content-1-right {
+        p{
+            text-indent: 4em;
+        }
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .about-us-image-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .about-us-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+}
+
+// About Page Styles
+.inner-banner {
+    background-image: url(https://wp.w3layouts.com/digitaledu/wp-content/themes/digitaledu/assets/images/banner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    min-height: 400px;
+    position: relative;
+    z-index: 1;
+
+    .banner-title {
+        position: absolute;
+        left: 10%;
+        top: 30%;
+        color: #fff;
+
+        h1 {
+            font-weight: 800;
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+    }
+}
+
+.inner-banner:before {
+    content: "";
+    background: rgb(0 0 0 / 70%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.radius-image-full {
+    border-radius: 15px;
+}
+
+.header-title {
+
+    .sub-title,
+    .sub-title-1 {
+        position: relative;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 600;
+        font-style: normal;
+        padding-left: 70px;
+        color: #be1e11;
+    }
+
+    .sub-title:before,
+    .sub-title-1::before {
+        content: '';
+        display: block;
+        width: 55px;
+        height: 3px;
+        background-color: #be1e11;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 50%;
+    }
+
+    .hny-title {
+        font-size: 36px;
+        line-height: 46px;
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+.why-choose-banner {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: top;
+    // border-radius: 15px;
+
+}
+
+.team {
+    .team-img img {
+        transition: all .2s ease-in-out;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .team-title {
+        margin: 25px 0 0px;
+        font-size: 24px;
+        color: #000;
+        font-weight: 600;
+        display: block;
+    }
+
+    .team-row {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about-wrapper {
+        .about-read-more {
+            display: none;
+        }
+
+        .AboutPageWhyChooseUs {
+            .why-choose-banner {
+                height: 30vh;
+            }
+        }
+    }
+
+    .about-us-content {
+        padding: 24px !important;
+        text-align: justify;
+        font-size: 12px;
+        border-radius: 30px;
+        margin: 32px 0px;
+    }
+
+
+
+    #myImage {
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo-image {
+        position: absolute;
+        height: 40%;
+        object-fit: cover;
+        top: 10%;
+        left: 10%;
+        transform: translateX(-10%);
+    }
+}

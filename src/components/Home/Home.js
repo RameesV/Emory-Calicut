@@ -10,6 +10,7 @@ import Testimonials from '../MiniComponents/Testimonials/Testimonials'
 import Hero1 from '../../assets/Images/hero1.jpg'
 import Hero3 from '../../assets/Images/hero3.jpg'
 import Hero4 from '../../assets/Images/hero4.jpg'
+import featuredImage from '../../assets/Images/Featured Courses.png'
 
 function Home() {
     const carouselHomePage = [
@@ -33,42 +34,42 @@ function Home() {
             "title": "PG diploma in hospital administration and healthcare management",
             "description": "Gain the skills and knowledge to excel in the healthcare management field.",
             "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/mision.jpg",
+            "src":featuredImage,
             "buttonName": "Enquire Now"
         },
         {
             "title": "diploma in hospital administration and healthcare management",
             "description": "A shorter program focused on the essentials of healthcare administration.",
             "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/vision.jpg",
+            "src":featuredImage,
             "buttonName": "Enquire Now"
         },
         {
             "title": "Montessori teacher training course",
             "description": "Become a qualified Montessori teacher and nurture young minds.",
             "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/responsibility.jpg",
+            "src":featuredImage,
             "buttonName": "Enquire Now"
         },
         {
             "title": "DIPLOMA IN HOTEL MANAGEMENT AND CATERING TECHNOLOGY",
             "description": "Prepare for a career in the hospitality industry.",
             "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/responsibility.jpg",
+            "src":featuredImage,
             "buttonName": "Admission CLosed"
         },
         {
             "title": "CERTIFICATION COURSE BEUTY AND BRIDAL MAKEUP",
             "description": "Learn the art of bridal makeup and enhance your skills.",
             "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/responsibility.jpg",
+            "src":featuredImage,
             "buttonName": "Enquire Now"
         },
         {
             "title": "CERTIFICATION COURSE IN BEUTY AND COSMETOLOGY",
             "description": "Expand your knowledge and expertise in the beauty industry.",
             "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/responsibility.jpg",
+            "src":featuredImage,
             "buttonName": "Enquire Now"
         }
     ]

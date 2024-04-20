@@ -72,7 +72,7 @@ const AboutSection = () => {
                                 emphasis on the skill based and service
                                 oriented molding of the students.
                             </p>
-                            <Button variant="outline-dark" as={Link} to="about">Read more</Button>{' '}
+                            <Button className="card-link" variant="outline-dark" as={Link} to="about">Read more</Button>{' '}
                         </Col>
                         <Col xs={12} sm={6} md={6} className="about-us-image-wrapper">
                             <img className="about-us-image" src="https://sadectip.sirv.com/React%20Project%20Files/webeducation.png" />

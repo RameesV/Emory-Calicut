@@ -37,7 +37,7 @@ function Testimonials() {
         <>
             <div class="header-title mb-md-5 mb-4 mt-4">
                 <span class="sub-title">Testimonials</span>
-                <h3 class="hny-title text-left">What People Say</h3>
+                <h3 class="hny-title text-left">What our students say</h3>
             </div>
             <div className='testimonials-carousel mb-5'>
                 <Carousel slide={true} controls={false} data-bs-theme="dark" interval={2000}>

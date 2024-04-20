@@ -34,42 +34,42 @@ function Home() {
             "title": "PG diploma in hospital administration and healthcare management",
             "description": "Gain the skills and knowledge to excel in the healthcare management field.",
             "pageLink": "/about",
-            "src":featuredImage,
+            "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
             "title": "diploma in hospital administration and healthcare management",
             "description": "A shorter program focused on the essentials of healthcare administration.",
             "pageLink": "/about",
-            "src":featuredImage,
+            "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
             "title": "Montessori teacher training course",
             "description": "Become a qualified Montessori teacher and nurture young minds.",
             "pageLink": "/about",
-            "src":featuredImage,
+            "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
             "title": "DIPLOMA IN HOTEL MANAGEMENT AND CATERING TECHNOLOGY",
             "description": "Prepare for a career in the hospitality industry.",
             "pageLink": "/about",
-            "src":featuredImage,
-            "buttonName": "Admission CLosed"
+            "src": featuredImage,
+            "buttonName": "Enquire Now"
         },
         {
             "title": "CERTIFICATION COURSE BEUTY AND BRIDAL MAKEUP",
             "description": "Learn the art of bridal makeup and enhance your skills.",
             "pageLink": "/about",
-            "src":featuredImage,
+            "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
             "title": "CERTIFICATION COURSE IN BEUTY AND COSMETOLOGY",
             "description": "Expand your knowledge and expertise in the beauty industry.",
             "pageLink": "/about",
-            "src":featuredImage,
+            "src": featuredImage,
             "buttonName": "Enquire Now"
         }
     ]
@@ -131,13 +131,14 @@ function Home() {
                     <Testimonials />
                 </Container>
             </section>
-            <section className='map-location-section'>
+            {/* <section className='map-location-section'>
                 place map here
-            </section>
+            </section> */}
             <section className='featured-courses-section'>
                 <Container>
                     <div>
                         <h2>READY TO LEARN?</h2>
+                        <span class="sub-title">Testimonials</span>
                     </div>
                     <div className='section-heading mb-5'>
                         <h4>Featured Courses</h4>

@@ -21,6 +21,7 @@
             background-color: #fff;
             border-radius: 20px;
             height: 100%;
+            align-items: center;
 
             .card-img-top {
                 height: 200px;
@@ -31,27 +32,6 @@
 
             .card-body {
                 margin-bottom: 26px;
-            }
-
-            .card-link {
-                text-decoration: none;
-                color: #000;
-                margin-left: 16px;
-                padding: 6px;
-                border-radius: 8px;
-                border: 1px solid #000;
-                margin-bottom: 8px;
-
-            }
-        }
-
-        .card:hover {
-            background-color: #000;
-            color: #fff;
-
-            .card-link {
-                border: 1px solid #fff;
-                color: #fff;
             }
         }
     }
@@ -197,14 +177,6 @@
                             text-transform: uppercase;
                             font-weight: bold;
                         }
-                    }
-
-                    .card-link {
-                        border-style: solid;
-                        border-radius: 025px 025px 0px 025px;
-                        padding: 12px 48px 12px 48px;
-                        text-decoration: none;
-                        margin-bottom: 12px;
                     }
 
                     .card-link:hover {

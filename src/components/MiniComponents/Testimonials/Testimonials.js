@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import './Testimonials.scss'
+import './Testimonials.scss';
 import HeaderComponent from '../HeaderComponent/HeaderComponent';
 
 function Testimonials() {
@@ -33,43 +33,57 @@ function Testimonials() {
             image: 'https://wp.w3layouts.com/digitaledu/wp-content/themes/digitaledu/assets/images/team5.jpg',
             role: 'student'
         },
-    ]
-    const mainHeading = 'What our students say'
-    const subHeading = 'Testimonials'
+    ];
+
+    const mainHeading = 'What our students say';
+    const subHeading = 'Testimonials';
+
+    const groupedTestimonials = [];
+    for (let i = 0; i < testimonials.length; i += 2) {
+        if (i + 1 < testimonials.length) {
+            groupedTestimonials.push([testimonials[i], testimonials[i + 1]]);
+        } else {
+            groupedTestimonials.push([testimonials[i]]);
+        }
+    }
+
     return (
         <>
             <HeaderComponent mainHeading={mainHeading} subHeading={subHeading} />
             <div className='testimonials-carousel mb-5'>
-                <Carousel id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" slide={true} controls={false} data-bs-theme="dark" interval={8000}>
-                    {testimonials.map((item) => (<Carousel.Item>
-                        <div className='testimonial-slider-wrapper mb-5'>
-                            <div className="test-item">
-                                <div className="item">
-                                    <div className="testimonial-content">
-                                        <div className="testimonial">
-                                            <blockquote>
-                                                <q>{item.description}</q>
-                                            </blockquote>
-                                        </div>
-                                        <div className="testi-des">
-                                            <div className="test-img">
-                                                <img src={item.image} className="img-fluid" alt="client-img" />
-                                            </div>
-                                            <div className="peopl align-self">
-                                                <h4>{item.name}</h4>
-                                                <p className="indentity">{item.role} </p>
+                <Carousel className="carousel slide carousel-fade" data-ride="carousel" slide={true} controls={false} data-bs-theme="dark" interval={8000}>
+                    {groupedTestimonials.map((pair, index) => (
+                        <Carousel.Item key={index}>
+                            <div className='testimonial-slider-wrapper mb-5'>
+                                {pair.map((item) => (
+                                    <div className="test-item" key={item.id}>
+                                        <div className="item">
+                                            <div className="testimonial-content">
+                                                <div className="testimonial">
+                                                    <blockquote>
+                                                        <q>{item.description}</q>
+                                                    </blockquote>
+                                                </div>
+                                                <div className="testi-des">
+                                                    <div className="test-img">
+                                                        <img src={item.image} className="img-fluid" alt="client-img" />
+                                                    </div>
+                                                    <div className="peopl align-self">
+                                                        <h4>{item.name}</h4>
+                                                        <p className="indentity">{item.role}</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                ))}
                             </div>
-                        </div>
-                    </Carousel.Item>
+                        </Carousel.Item>
                     ))}
                 </Carousel>
             </div>
         </>
-    )
+    );
 }
 
-export default Testimonials
+export default Testimonials;

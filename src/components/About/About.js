@@ -1,9 +1,13 @@
 import React, { useRef } from 'react';
 import './About.scss'
-import Button from 'react-bootstrap/Button'
 import { Col, Container, Row } from 'react-bootstrap'
-import BgImg from '../../assets/Images/bg 2.png'
+import founder1 from '../../assets/Images/founder1.jpg'
+import founder2 from '../../assets/Images/founder2.jpg'
+import bannerImg from '../../assets/Images/abt.png'
 import MvvSection from './MvvSection';
+import HeaderComponent from '../MiniComponents/HeaderComponent/HeaderComponent';
+import g3 from '../../assets/Gallery/g3.jpg'
+
 
 function About() {
   const aboutData = [
@@ -58,15 +62,12 @@ function About() {
           <div className="">
             <div className="py-lg-5 py-md-3 AboutPageAbout">
               <div className="row">
-                <div className="col-lg-6 mb-lg-0 mb-md-5 mb-4">
-                  <img src="https://wp.w3layouts.com/digitaledu/wp-content/themes/digitaledu/assets/images/ab1.jpg"
+                <div className="col-lg-6 mb-lg-0">
+                  <img src={bannerImg}
                     alt="" className="radius-image-full img-fluid" />
                 </div>
                 <div className="col-lg-6 pl-lg-5 ps-4">
-                  <div className="header-title">
-                    <span className="sub-title">About Us</span>
-                    <h3 className="hny-title text-left">Learn at Your Own Place</h3>
-                  </div>
+                  < HeaderComponent className="mb-1" mainHeading={"Learn at Your Own Place"} subHeading={"About Us"} />
                   <p className="mt-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
                     consectetur adipisicing.Nunc id ipsum fringilla, gravida felis vitae. lacinia id, sunt in
                     culpa quis lacinia. Lorem ipsum dolor, sit amet init elit. Eos,
@@ -76,59 +77,58 @@ function About() {
             </div>
           </div>
         </section>
-        <section className="" id="about">
-          <div className="py-lg-5 py-md-3 AboutPageWhyChooseUs">
-            <img src="https://wp.w3layouts.com/digitaledu/wp-content/themes/digitaledu/assets/images/ab1.jpg"
-              alt="" className="why-choose-banner" />
+      </Container>
+      <section className="" id="about">
+        <div className="py-lg-5 py-md-3 AboutPageWhyChooseUs">
+          <img src={g3} alt="" className="why-choose-banner" />
+          <Container>
             <div className="mb-4 pr-lg-5 pe-4">
               <div className="header-title mb-md-5 mb-4">
-                <span className="sub-title">Why Choose Us</span>
-                <h3 className="hny-title text-left">
-                  Educating Champions of a Just and Sustainable world
-                </h3>
+                < HeaderComponent mainHeading={"Educating Champions of a Just and Sustainable world"} subHeading={"Why Choose Us"} />
               </div>
             </div>
             <MvvSection />
-          </div>
-        </section>
+          </Container>
+        </div>
+      </section>
 
-        <section className="team" id="team">
-          <div className="team py-5">
-            <div className="container py-lg-5 AboutPageTeam">
-              <div className="header-title mb-4">
-                <span className="sub-title">Our Team</span>
-                <h3 className="hny-title text-left">Co Founders</h3>
-              </div>
-              <div className="row team-row ">
-                <div className="col-lg-3 col-6 team-wrap mt-lg-5 mt-4">
-                  <div className="team-member text-center">
-                    <div className="team-img">
-                      <img src="https://wp.w3layouts.com/digitaledu/wp-content/themes/digitaledu/assets/images/team1.jpg" alt="" className="radius-image" />
-                      <div className="overlay-team">
-                      </div>
-                    </div>
-                    <p className="team-title">
-                      Daniel jacobs</p>
-                    <p>Instructor</p>
-                  </div>
-                </div>
-
-                <div className="col-lg-3 col-6 team-wrap mt-lg-5 mt-4">
-                  <div className="team-member text-center">
-                    <div className="team-img">
-                      <img src="https://wp.w3layouts.com/digitaledu/wp-content/themes/digitaledu/assets/images/team3.jpg" alt="" className="radius-image" />
-                      <div className="overlay-team">
-                      </div>
-                    </div>
-                    <p className="team-title">
-                      Claire Daniel</p>
-                    <p>Instructor</p>
-                  </div>
-                </div>
-              </div>
+      <section className="team" id="team">
+        <div className="team py-5">
+          <div className="container py-lg-5 AboutPageTeam">
+            <div className="header-title">
+              < HeaderComponent mainHeading={"Co-Founders"} subHeading={"Our Team"} />
             </div>
-          </div></section>
-      </Container>
+            <Row className="row team-row ">
+              <Col lg={3} md={3} sm={12}></Col>
+              <Col lg={3} md={3} sm={12} className="team-wrap">
+                <div className="team-member text-center">
+                  <div className="team-img">
+                    <img src={founder1} alt="" className="radius-image" />
+                    <div className="overlay-team">
+                    </div>
+                  </div>
+                  <p className="team-title">Jabir Moidu E K</p>
+                  <p>Founder</p>
+                </div>
+              </Col>
+
+              <Col lg={3} md={3} sm={12} className="team-wrap">
+                <div className="team-member text-center">
+                  <div className="team-img">
+                    <img src={founder2} alt="" className="radius-image" />
+                    <div className="overlay-team">
+                    </div>
+                  </div>
+                  <p className="team-title">Muhammedali KK</p>
+                  <p>Founder</p>
+                </div>
+              </Col>
+              <Col lg={3} md={3} sm={12}></Col>
+
+            </Row>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

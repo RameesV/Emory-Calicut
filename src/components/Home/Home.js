@@ -75,9 +75,6 @@ function Home() {
         }
     ]
 
-    const mainHeading = "Featured Courses"
-    const subHeading = "READY TO LEARN?"
-
     return (
         <div className='home-page'>
 
@@ -141,7 +138,7 @@ function Home() {
             <section className='featured-courses-section'>
                 <Container>
                     <div>
-                        <HeaderComponent mainHeading = {mainHeading} subHeading = {subHeading}/>
+                        <HeaderComponent mainHeading={"Featured Courses"} subHeading={"READY TO LEARN?"} />
                     </div>
                     <div className='featured-courses'>
                         <Row>

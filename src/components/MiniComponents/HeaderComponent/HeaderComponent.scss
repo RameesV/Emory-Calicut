@@ -1,0 +1,33 @@
+.section-header-wrapper {
+
+    .sub-title,
+    .sub-title-1 {
+        position: relative;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 600;
+        font-style: normal;
+        padding-left: 70px;
+        color: #be1e11;
+    }
+
+    .sub-title:before,
+    .sub-title-1::before {
+        content: '';
+        display: block;
+        width: 55px;
+        height: 3px;
+        background-color: #be1e11;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 50%;
+    }
+
+    .main-title {
+        font-size: 36px;
+        line-height: 46px;
+        margin: 0;
+        max-width: 100%;
+    }
+}

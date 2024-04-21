@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import './Testimonials.scss'
+import HeaderComponent from '../HeaderComponent/HeaderComponent';
 
 function Testimonials() {
     const testimonials = [
@@ -33,14 +34,13 @@ function Testimonials() {
             role: 'student'
         },
     ]
+    const mainHeading = 'What our students say'
+    const subHeading = 'Testimonials'
     return (
         <>
-            <div class="header-title mb-md-5 mb-4 mt-4">
-                <span class="sub-title">Testimonials</span>
-                <h3 class="hny-title text-left">What our students say</h3>
-            </div>
+            <HeaderComponent mainHeading={mainHeading} subHeading={subHeading} />
             <div className='testimonials-carousel mb-5'>
-                <Carousel slide={true} controls={false} data-bs-theme="dark" interval={2000}>
+                <Carousel id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" slide={true} controls={false} data-bs-theme="dark" interval={8000}>
                     {testimonials.map((item) => (<Carousel.Item>
                         <div className='testimonial-slider-wrapper mb-5'>
                             <div className="test-item">

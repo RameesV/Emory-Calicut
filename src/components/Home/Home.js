@@ -11,6 +11,7 @@ import Hero1 from '../../assets/Images/hero1.jpg'
 import Hero3 from '../../assets/Images/hero3.jpg'
 import Hero4 from '../../assets/Images/hero4.jpg'
 import featuredImage from '../../assets/Images/Featured Courses.png'
+import HeaderComponent from '../MiniComponents/HeaderComponent/HeaderComponent'
 
 function Home() {
     const carouselHomePage = [
@@ -73,6 +74,9 @@ function Home() {
             "buttonName": "Enquire Now"
         }
     ]
+
+    const mainHeading = "Featured Courses"
+    const subHeading = "READY TO LEARN?"
 
     return (
         <div className='home-page'>
@@ -137,11 +141,7 @@ function Home() {
             <section className='featured-courses-section'>
                 <Container>
                     <div>
-                        <h2>READY TO LEARN?</h2>
-                        <span class="sub-title">Testimonials</span>
-                    </div>
-                    <div className='section-heading mb-5'>
-                        <h4>Featured Courses</h4>
+                        <HeaderComponent mainHeading = {mainHeading} subHeading = {subHeading}/>
                     </div>
                     <div className='featured-courses'>
                         <Row>

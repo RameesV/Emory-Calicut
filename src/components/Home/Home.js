@@ -114,16 +114,19 @@ function Home() {
                         </Col>
                     </Row>
                 </section>
-                {/* <MvvSection /> */}
-                <section className='service-section'>
-                    <div className='service-overlay'></div>
-                    <h2>Our Services</h2>
-                    <p className='service-description-main'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <Service />
-                </section>
             </Container>
+
+            {/* <MvvSection /> */}
+            <section className='service-section'>
+                <div className='service-overlay'></div>
+                <h2>Our Services</h2>
+                <p className='service-description-main'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <Container>
+                    <Service />
+                </Container>
+            </section>
             <section className='counter-section mt-5 mb-5'>
                 <Counter />
             </section>

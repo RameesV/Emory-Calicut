@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroSection from '../MiniComponents/HeroSection/HeroSection'
+import ContactForm from '../ContactForm/ContactForm'
 
 function ContactUs() {
   const data = [{
@@ -17,6 +18,7 @@ function ContactUs() {
   return (
     <>
       <HeroSection heroContent={data} />
+      <ContactForm/>
     </>
   )
 }

@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 import './About.scss'
 import { Col, Container, Row } from 'react-bootstrap'
 import founder1 from '../../assets/Images/founder1.jpg'
@@ -10,43 +9,6 @@ import g3 from '../../assets/Gallery/g3.jpg'
 
 
 function About() {
-  const aboutData = [
-    {
-      title: "Our Mission",
-      description: "Emory focuses on service through knowledge and to inspire curiosity and discovery for success in a rapidly changing world"
-    },
-    {
-      title: "Vision",
-      description: " To educate young minds and foster ethical, social and moral values through holistic learning and groom them into responsible global citizens."
-    },
-    {
-      title: "Integrity",
-      description: "We act with integrity and honesty in accordance with the highest academic, professional and ethical standards."
-    },
-    {
-      title: "Respect",
-      description: "We respect and honor the dignity of each person, embrace civil discourse and foster a diverse and inclusive community."
-    },
-    {
-      title: "Responsibility",
-      description: "We act responsibly and we are accountable for our decisions, actions and their consequences"
-    },
-    {
-      title: "Discovery",
-      description: "We seek and create new knowledge understanding and foster creativity and innovation for the benefit of our communities, societies and the environmentev"
-    },
-    {
-      title: "Excellence",
-      description: "We strive for excellence in all our endeavors as individuals, an institution and a leader in higher education."
-    },
-    {
-      title: "Community",
-      description: "We work together for the betterment of our institution, the university we affiliated, the communities we serve and the world."
-    }
-  ];
-
-
-
   return (
     <div className='about-wrapper'>
       <div className="inner-banner mb-3">

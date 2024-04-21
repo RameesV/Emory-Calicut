@@ -40,7 +40,7 @@ const AboutSection = () => {
                             <Link className="card-link" smooth={true} to="about">Read more</Link>{' '}
                         </Col>
                         <Col xs={12} sm={6} md={6} className="about-us-image-wrapper">
-                            <img className="about-us-image" src="https://sadectip.sirv.com/React%20Project%20Files/webeducation.png" />
+                            <img alt="loading..." className="about-us-image" src="https://sadectip.sirv.com/React%20Project%20Files/webeducation.png" />
                         </Col>
                     </Row>
                 </div>

@@ -5,7 +5,7 @@ import founder2 from '../../assets/Images/founder2.jpg'
 import bannerImg from '../../assets/Images/abt.png'
 import MvvSection from './MvvSection';
 import HeaderComponent from '../MiniComponents/HeaderComponent/HeaderComponent';
-import g3 from '../../assets/Gallery/g3.jpg'
+import g3 from '../../assets/Images/bgbg.jpg';
 
 
 function About() {

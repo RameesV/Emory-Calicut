@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import HeroSection from '../MiniComponents/HeroSection/HeroSection'
 import image from '../../assets/Images/banner2.jpg'
@@ -14,6 +14,10 @@ import instaPost5 from '../../assets/InstaPost/5.webp'
 import instaPost6 from '../../assets/InstaPost/6.webp'
 
 function EmoryPage() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
+    }, []); 
+
     const data = [{
         id: 1,
         title1: "Emory Educational Institution",

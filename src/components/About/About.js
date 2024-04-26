@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react'
 import './About.scss'
 import { Col, Container, Row } from 'react-bootstrap'
 import founder1 from '../../assets/Images/founder1.jpg'
@@ -9,6 +10,9 @@ import g3 from '../../assets/Images/bgbg.jpg';
 
 
 function About() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
+  }, []);
   return (
     <div className='about-wrapper'>
       <div className="inner-banner mb-3">

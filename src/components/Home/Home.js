@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CarouselFade from '../Carousel/MyCarousel'
 import AboutSection from '../About/AboutSection'
 import './Home.scss'
@@ -14,6 +14,9 @@ import featuredImage from '../../assets/Images/Featured Courses.png'
 import HeaderComponent from '../MiniComponents/HeaderComponent/HeaderComponent'
 
 function Home() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
+    }, []);
     const carouselHomePage = [
         {
             id: 1,

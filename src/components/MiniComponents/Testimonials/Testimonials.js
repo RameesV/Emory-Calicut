@@ -51,7 +51,7 @@ function Testimonials() {
         <>
             <HeaderComponent mainHeading={mainHeading} subHeading={subHeading} />
             <div className='testimonials-carousel mb-5'>
-                <Carousel className="carousel slide carousel-fade" data-ride="carousel" slide={true} controls={false} data-bs-theme="dark" interval={8000}>
+                <Carousel className="carousel slide" data-ride="carousel" slide={true} controls={false} data-bs-theme="dark" interval={5000}>
                     {groupedTestimonials.map((pair, index) => (
                         <Carousel.Item key={index}>
                             <div className='testimonial-slider-wrapper mb-5'>

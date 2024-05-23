@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import EmoryPage from './components/Pages/EmoryPage';
 import DawnPage from './components/Pages/DawnPage';
+import BSchool from './components/Pages/BSchool';
 import JasbroPage from './components/Pages/JasbroPage';
 import ContactUs from './components/Pages/ContactUs';
 import Gallery from './components/Pages/Gallery';
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: '/jasbro',
         element: <JasbroPage />,
+      },
+      {
+        path: '/bSchool',
+        element: <BSchool />,
       },
       {
         path:'/contact-us',

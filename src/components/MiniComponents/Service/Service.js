@@ -39,10 +39,10 @@ function Service() {
         {
             id:4,
             src: ImgOther,
-            title: "Others ",
-            subHeading: 'Other Sub Heading',
+            title: "B School ",
+            subHeading: 'Emory B School',
             description: "We respect and honor the dignity of each person, embrace civil discourse and foster a diverse and inclusive community.",
-            pageLink: '/about',
+            pageLink: '/bSchool',
             buttonName: 'Learn More'
         }
     ];

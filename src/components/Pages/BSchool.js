@@ -1,3 +1,4 @@
+
 import React,{useEffect} from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import HeroSection from '../MiniComponents/HeroSection/HeroSection'
@@ -13,22 +14,22 @@ import instaPost4 from '../../assets/InstaPost/4.webp'
 import instaPost5 from '../../assets/InstaPost/5.webp'
 import instaPost6 from '../../assets/InstaPost/6.webp'
 
-function DawnPage() {
+function BSchool() {
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
     }, []); 
 
     const data = [{
         id: 1,
-        title1: "Higher Secondary Education",
+        title1: "Emory B School",
     },
     {
         id: 2,
-        title2: "",
+        title2: "The Emory Business School",
     },
     {
         id: 3,
-        title3: "Commerce | Humanities | Science"
+        title3: ""
     },
     {
         id: 4,
@@ -148,4 +149,4 @@ function DawnPage() {
     )
 }
 
-export default DawnPage
+export default BSchool

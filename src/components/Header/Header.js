@@ -44,6 +44,9 @@ const Header = () => {
                                         <NavDropdown.Item>
                                             <Link className='text-decoration-none text-black' to="jasbro">Jasbro</Link>
                                         </NavDropdown.Item>
+                                        <NavDropdown.Item>
+                                            <Link className='text-decoration-none text-black' to="bSchool">B School</Link>
+                                        </NavDropdown.Item>
                                     </NavDropdown>
                                     <Nav.Link as={Link} to="contact-us">Contact Us</Nav.Link>
                                     <Nav.Link as={Link} to="gallery">Gallery</Nav.Link>

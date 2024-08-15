@@ -50,10 +50,9 @@ function Service() {
     return (
         <div className='service-cards'>
             <Row>
-                {serviceData.map((card) => (
-                    <Col lg={3} md={3} sm={6} xs={6} className='card-wrapper-col'>
+                {serviceData.map((card, index) => (
+                    <Col  key={card.id} lg={3} md={3} sm={6} xs={6} className='card-wrapper-col'>
                         <MyCards
-                            key={card.id}
                             title={card.title}
                             subHeading={card.subHeading}
                             src={card.src}

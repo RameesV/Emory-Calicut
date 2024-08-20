@@ -1,9 +1,15 @@
 // Homepage About Section 
+.about-desc {
+    text-align: justify;
+    padding: 0 1rem 0 0;
+}
+
 .content-1-grids {
     .content-1-right {
-        p{
+        p {
             text-indent: 4em;
         }
+
         span {
             font-weight: 600;
         }
@@ -89,12 +95,17 @@
         font-weight: 600;
         display: block;
     }
-    .team-wrap{
+
+    .team-wrap {
         padding: 8px;
     }
 }
 
 @media only screen and (max-width: 767px) {
+    .about-desc {
+        padding:0 !important;
+    }
+
     .about-wrapper {
         .about-read-more {
             display: none;

@@ -1,0 +1,60 @@
+.test-item {
+    width: 400px;
+    max-width: 450px;
+    height: auto;
+
+    .testimonial-content {
+        .testimonial {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            height: 200px;
+
+            blockquote q::before {
+                font-size: 28px;
+                color: #ce1c1c;
+                font-weight: 600;
+                display: inline-block;
+                font-family: "Merriweather", serif;
+                line-height: 0;
+            }
+
+            blockquote q::after {
+                font-size: 28px;
+                color: #ce1c1c;
+                font-weight: 600;
+                font-family: "Merriweather", serif;
+                line-height: 0;
+            }
+        }
+
+        .testi-des {
+            margin-top: 12px;
+            display: flex;
+            justify-content: start;
+            gap: 20px;
+
+            .test-img {
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+.slick-slide {
+    margin: 8px;
+}
+
+.slick-slider {
+    height: 70vh;
+}
+
+@media only screen and (max-width: 551px) {
+    .slick-slider {
+        height: 40vh;
+    }
+}

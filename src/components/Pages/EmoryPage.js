@@ -1,7 +1,7 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import HeroSection from '../MiniComponents/HeroSection/HeroSection'
-import image from '../../assets/Images/banner2.jpg'
+import image from '../../assets/Images/hero2.jpg'
 import MyCards from '../MiniComponents/Cards/MyCards'
 import featuredImage from '../../assets/Images/Featured Courses.png'
 import PosterGallery from '../MiniComponents/PosterGallery'
@@ -16,7 +16,7 @@ import instaPost6 from '../../assets/InstaPost/6.webp'
 function EmoryPage() {
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
-    }, []); 
+    }, []);
 
     const data = [{
         id: 1,
@@ -114,7 +114,7 @@ function EmoryPage() {
     ]
     return (
         <div className=''>
-            <HeroSection heroContent={data} />
+            <HeroSection heroContent={data} heroBg={image} />
             <Container>
                 <div className='posters-wrapper'>
                     <h1 className='poster-title'>Latest Updates</h1>

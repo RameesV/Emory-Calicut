@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import HeroSection from '../MiniComponents/HeroSection/HeroSection'
 import image from '../../assets/Images/banner2.jpg'
@@ -114,7 +114,7 @@ function JasbroPage() {
     ]
     return (
         <div className=''>
-            <HeroSection heroContent={data} />
+            <HeroSection heroContent={data} heroBg={image} />
             <Container>
                 <div className='posters-wrapper'>
                     <h1 className='poster-title'>Latest Updates</h1>

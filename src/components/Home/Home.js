@@ -7,9 +7,9 @@ import Service from '../MiniComponents/Service/Service'
 import MyCards from '../MiniComponents/Cards/MyCards'
 import Counter from '../MiniComponents/Counter/Counter'
 import Testimonials from '../MiniComponents/Testimonials/Testimonials'
-import Hero1 from '../../assets/Images/hero1.jpg'
-import Hero3 from '../../assets/Images/hero3.jpg'
-import Hero4 from '../../assets/Images/hero4.jpg'
+import Hero1 from '../../assets/Images/c6.jpg'
+import Hero3 from '../../assets/Images/c5.jpg'
+import Hero4 from '../../assets/Images/c4.jpg'
 import featuredImage from '../../assets/Images/Featured Courses.png'
 import HeaderComponent from '../MiniComponents/HeaderComponent/HeaderComponent'
 
@@ -20,15 +20,21 @@ function Home() {
     const carouselHomePage = [
         {
             id: 1,
-            src: Hero1
+            src: Hero1,
+            headline: "Explore a world of opportunities.",
+            description: "Discover a diverse range of courses and institutions across India and abroad."
         },
         {
             id: 2,
-            src: Hero3
+            src: Hero3,
+            headline: "Personalized Pathways to Success",
+            description: "Tailor your education with our personalized guidance and expert counseling.",
         },
         {
             id: 3,
-            src: Hero4
+            src: Hero4,
+            headline: "Achieve your dreams with us",
+            description: "Benefit from our internationally accredited programs and partnerships.",
         },
 
     ]

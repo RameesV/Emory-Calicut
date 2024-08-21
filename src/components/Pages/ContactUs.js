@@ -4,6 +4,8 @@ import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-
 import { faWhatsapp, faLinkedin, faFacebook, faInstagram, faSquareXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 import "./ContactUs.scss";
+import {toast} from "react-hot-toast";
+import {Toaster} from "react-hot-toast";
 
 const ContactUs = () => {
   const formRef = useRef(null);
@@ -23,12 +25,12 @@ const ContactUs = () => {
       return res.json();
     })
       .then(data => {
-        console.log(data);
-        alert(data.msg);
+        // console.log(data);
+        toast.success(data.msg)
       })
       .catch(err => {
-        console.error('There was a problem with the fetch operation:', err);
-        alert('Submission failed. Please try again.');
+        // console.error('There was a problem with the fetch operation:', err);
+        toast.error('Submission failed. Please try again.')
       });
   };
 
@@ -53,6 +55,10 @@ const ContactUs = () => {
 
   return (
     <div className="container-wrapper">
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
       <span className="big-circle"></span>
       <img src="img/shape.png" className="square" alt="sadsadsadsa" />
       <div className="form">

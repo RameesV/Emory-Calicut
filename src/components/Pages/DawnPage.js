@@ -20,15 +20,15 @@ function DawnPage() {
 
     const data = [{
         id: 1,
-        title1: "Higher Secondary Education",
+        title1: "DAWN",
     },
     {
         id: 2,
-        title2: "",
+        title2: "School of Science and Commerce",
     },
     {
         id: 3,
-        title3: "Commerce | Humanities | Science"
+        title3: "Kuttiady"
     },
     {
         id: 4,

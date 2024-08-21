@@ -20,7 +20,7 @@ function JasbroPage() {
 
     const data = [{
         id: 1,
-        title1: "Jasbro Educational and Placement Consultant",
+        title1: "Jasbro Educational Consultant",
     },
     {
         id: 2,
@@ -28,7 +28,7 @@ function JasbroPage() {
     },
     {
         id: 3,
-        title3: ""
+        title3: "Calicut | Kuttiady | Thalashery"
     },
     {
         id: 4,

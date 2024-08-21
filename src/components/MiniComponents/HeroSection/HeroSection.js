@@ -11,8 +11,8 @@ function HeroSection({ heroContent, heroBg }) {
                 <Row>
                     <Col className='hero-section-content'>
                         <h1>{heroContent[0].title1}</h1>
-                        <h4>{heroContent[1].title2}</h4>
-                        <h5>{heroContent[2].title3}</h5>
+                        <h3>{heroContent[1].title2}</h3>
+                        <h6>{heroContent[2].title3}</h6>
                     </Col>
                 </Row>
             </section>

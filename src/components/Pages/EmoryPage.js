@@ -24,11 +24,11 @@ function EmoryPage() {
     },
     {
         id: 2,
-        title2: "The best educational institution for",
+        title2: "The best educational institution",
     },
     {
         id: 3,
-        title3: "Hospital Administration | PPTTC | Event Management | Bridal Makeup"
+        title3: "Calicut | Kuttiady | Thalashery"
     },
     {
         id: 4,

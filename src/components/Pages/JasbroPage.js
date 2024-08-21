@@ -70,44 +70,23 @@ function JasbroPage() {
 
     const coursesData = [
         {
-            "title": "PG diploma in hospital administration and healthcare management",
-            "description": "Gain the skills and knowledge to excel in the healthcare management field.",
-            "pageLink": "/about",
+            "title": "B.Ed",
+            "description": "A two-year teacher education program for aspiring educators.",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ()",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "diploma in hospital administration and healthcare management",
-            "description": "A shorter program focused on the essentials of healthcare administration.",
-            "pageLink": "/about",
+            "title": "M.Ed",
+            "description": "A postgraduate program for educators seeking advanced teaching expertise.",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course (M.Ed)",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "Montessori teacher training course",
-            "description": "Become a qualified Montessori teacher and nurture young minds.",
-            "pageLink": "/about",
-            "src": featuredImage,
-            "buttonName": "Enquire Now"
-        },
-        {
-            "title": "DIPLOMA IN HOTEL MANAGEMENT AND CATERING TECHNOLOGY",
-            "description": "Prepare for a career in the hospitality industry.",
-            "pageLink": "/about",
-            "src": featuredImage,
-            "buttonName": "Enquire Now"
-        },
-        {
-            "title": "CERTIFICATION COURSE BEUTY AND BRIDAL MAKEUP",
-            "description": "Learn the art of bridal makeup and enhance your skills.",
-            "pageLink": "/about",
-            "src": featuredImage,
-            "buttonName": "Enquire Now"
-        },
-        {
-            "title": "CERTIFICATION COURSE IN BEUTY AND COSMETOLOGY",
-            "description": "Expand your knowledge and expertise in the beauty industry.",
-            "pageLink": "/about",
+            "title": "PhD",
+            "description": "A doctoral degree earned through research and a dissertation.",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course (Phd)",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         }

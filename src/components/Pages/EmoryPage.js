@@ -70,44 +70,44 @@ function EmoryPage() {
 
     const coursesData = [
         {
-            "title": "PG diploma in hospital administration and healthcare management",
+            "title": "PG Diploma in Hospital Administration and Healthcare Management",
             "description": "Gain the skills and knowledge to excel in the healthcare management field.",
-            "pageLink": "/about",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( PG Diploma in Hospital Administration and Healthcare Management )",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "diploma in hospital administration and healthcare management",
+            "title": "Diploma in Hospital Administration and Healthcare Management",
             "description": "A shorter program focused on the essentials of healthcare administration.",
-            "pageLink": "/about",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( Diploma in Hospital Administration and Healthcare Management )",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "Montessori teacher training course",
-            "description": "Become a qualified Montessori teacher and nurture young minds.",
-            "pageLink": "/about",
+            "title": "Diploma in Retail Management",
+            "description": "A program for aspiring retail professionals, focusing on store operations and management.",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( Diploma in Retail Management)",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "DIPLOMA IN HOTEL MANAGEMENT AND CATERING TECHNOLOGY",
-            "description": "Prepare for a career in the hospitality industry.",
-            "pageLink": "/about",
+            "title": "PG Diploma in Retail Management",
+            "description": "A specialized program for aspiring retail professionals.",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( PG Diploma in Retail Management )",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "CERTIFICATION COURSE BEUTY AND BRIDAL MAKEUP",
-            "description": "Learn the art of bridal makeup and enhance your skills.",
-            "pageLink": "/about",
+            "title": "Montessori Teaching Education",
+            "description": "A specialized program focusing on Montessori teaching methods for early childhood education.",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( Montessori Teaching Education )",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "CERTIFICATION COURSE IN BEUTY AND COSMETOLOGY",
-            "description": "Expand your knowledge and expertise in the beauty industry.",
-            "pageLink": "/about",
+            "title": "Medical Coding",
+            "description": "Assigning numerical codes to medical diagnoses and procedures.",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( Medical Coding )",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         }

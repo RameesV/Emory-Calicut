@@ -4,8 +4,8 @@ import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-
 import { faWhatsapp, faLinkedin, faFacebook, faInstagram, faSquareXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 import "./ContactUs.scss";
-import {toast} from "react-hot-toast";
-import {Toaster} from "react-hot-toast";
+import { toast } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 const ContactUs = () => {
   const formRef = useRef(null);
@@ -93,20 +93,19 @@ const ContactUs = () => {
           <div className="social-media">
             <p>Connect with us :</p>
             <div className="social-icons">
-              <a href="#">
-                <i className="fab fa-facebook-f"></i>
+              <a href="https://www.facebook.com/share/RR7EV8tCGH5JLpBt/?mibextid=LQQJ4d" target="_blank">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
-              <a href="#">
-                <i className="fab fa-twitter"></i>
+
+              <a href="https://www.instagram.com/emory_clt?igsh=ZmlxZXB5dnk2aDI0&utm_source=qr" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a href="#">
-                <i className="fab fa-instagram"></i>
+
+              {/* <a href="" target="_blank">
                 <FontAwesomeIcon icon={faSquareXTwitter} />
-              </a>
-              <a href="#">
-                <i className="fab fa-linkedin-in"></i>
+              </a> */}
+
+              <a href="https://www.linkedin.com/school/emory-educational-institute/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>

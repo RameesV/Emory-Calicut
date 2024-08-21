@@ -72,21 +72,21 @@ function JasbroPage() {
         {
             "title": "B.Ed",
             "description": "A two-year teacher education program for aspiring educators.",
-            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ()",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( B.Ed )",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
             "title": "M.Ed",
             "description": "A postgraduate program for educators seeking advanced teaching expertise.",
-            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course (M.Ed)",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( M.Ed )",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
             "title": "PhD",
             "description": "A doctoral degree earned through research and a dissertation.",
-            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course (Phd)",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( Phd )",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         }

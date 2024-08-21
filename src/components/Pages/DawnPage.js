@@ -70,44 +70,23 @@ function DawnPage() {
 
     const coursesData = [
         {
-            "title": "PG diploma in hospital administration and healthcare management",
-            "description": "Gain the skills and knowledge to excel in the healthcare management field.",
-            "pageLink": "/about",
+            "title": "+1, +2 Regular Courses",
+            "description": "Regular Courses in Science, Commerce, and Humanities",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course (+1, +2 Regular Courses)",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "diploma in hospital administration and healthcare management",
-            "description": "A shorter program focused on the essentials of healthcare administration.",
-            "pageLink": "/about",
+            "title": "BOSSE",
+            "description": "6 Month SSLC and Plus Two",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( BOSSE )",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "Montessori teacher training course",
-            "description": "Become a qualified Montessori teacher and nurture young minds.",
-            "pageLink": "/about",
-            "src": featuredImage,
-            "buttonName": "Enquire Now"
-        },
-        {
-            "title": "DIPLOMA IN HOTEL MANAGEMENT AND CATERING TECHNOLOGY",
-            "description": "Prepare for a career in the hospitality industry.",
-            "pageLink": "/about",
-            "src": featuredImage,
-            "buttonName": "Enquire Now"
-        },
-        {
-            "title": "CERTIFICATION COURSE BEUTY AND BRIDAL MAKEUP",
-            "description": "Learn the art of bridal makeup and enhance your skills.",
-            "pageLink": "/about",
-            "src": featuredImage,
-            "buttonName": "Enquire Now"
-        },
-        {
-            "title": "CERTIFICATION COURSE IN BEUTY AND COSMETOLOGY",
-            "description": "Expand your knowledge and expertise in the beauty industry.",
-            "pageLink": "/about",
+            "title": "NIOS",
+            "description": "6 Month SSLC and Plus Two",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( NIOS )",
             "src": featuredImage,
             "buttonName": "Enquire Now"
         }

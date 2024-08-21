@@ -1,4 +1,7 @@
 import React, { useRef } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp, faLinkedin, faFacebook, faInstagram, faSquareXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 import "./ContactUs.scss";
 
@@ -61,20 +64,23 @@ const ContactUs = () => {
           </p>
           <div className="info">
             <div className="information">
-              <i className="fas fa-map-marker-alt"></i>
+              <FontAwesomeIcon icon={faLocationDot} />
               &nbsp; &nbsp;
               <p>Eroth center, Opp Fathima Hospital, Calicut</p>
             </div>
             <div className="information">
-              <i className="fas fa-envelope"></i> &nbsp; &nbsp;
+              <FontAwesomeIcon icon={faEnvelope} />
+              &nbsp; &nbsp;
               <p>emorycalicut@gmail.com </p>
             </div>
             <div className="information">
-              <i className="fas fa-phone"></i>&nbsp;&nbsp;
+              <FontAwesomeIcon icon={faPhone} />
+              &nbsp;&nbsp;
               <p>+91 8156815682</p>
             </div>
             <div className="information">
-              <i className="fab fa-whatsapp"></i>&nbsp;&nbsp;
+              <FontAwesomeIcon icon={faWhatsapp} />
+              &nbsp;&nbsp;
               <p>+91 7306058474</p>
             </div>
           </div>
@@ -83,15 +89,19 @@ const ContactUs = () => {
             <div className="social-icons">
               <a href="#">
                 <i className="fab fa-facebook-f"></i>
+                <FontAwesomeIcon icon={faFacebook} />
               </a>
               <a href="#">
                 <i className="fab fa-twitter"></i>
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a href="#">
                 <i className="fab fa-instagram"></i>
+                <FontAwesomeIcon icon={faSquareXTwitter} />
               </a>
               <a href="#">
                 <i className="fab fa-linkedin-in"></i>
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>
           </div>
@@ -103,27 +113,27 @@ const ContactUs = () => {
             <h3 className="title">Contact us</h3>
             <div className="input-container-wrapper">
               <input type="text" name="Name" className="input" required />
-              <label for="">Name</label>
+              <label>Name</label>
               <span>Name</span>
             </div>
             <div className="input-container-wrapper">
               <input type="email" name="Email" className="input" required />
-              <label for="">Email</label>
+              <label>Email</label>
               <span>Email</span>
             </div>
             <div className="input-container-wrapper">
               <input type="tel" name="Phone" className="input" required />
-              <label for="">Phone</label>
+              <label>Phone</label>
               <span>Phone</span>
             </div>
             <div className="input-container-wrapper">
               <input type="text" name="Address" className="input" />
-              <label for="">Address</label>
+              <label>Address</label>
               <span>Address</span>
             </div>
             <div className="input-container-wrapper textarea">
               <input type="text" name="Message" className="input"></input>
-              <label for="">Message</label>
+              <label>Message</label>
               <span>Message</span>
             </div>
             <span className="info-text">We'll never share your data with anyone else.</span>

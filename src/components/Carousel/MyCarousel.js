@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 const CarouselFade = ({ data }) => {
   return (
-    <Carousel fade controls={false} interval={25000}>
+    <Carousel fade controls={false} interval={3500}>
       {data.map((item) => (
         <Carousel.Item key={item.id}>
           <div className='slider-image-wrapper'>

@@ -2,7 +2,6 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 
 function PosterGallery({instaImage}) {
-    console.log(instaImage);
     return (
         <div>
             <Row>

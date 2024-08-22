@@ -1,45 +1,59 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Nav from 'react-bootstrap/Nav';
+import "./Footer.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faLinkedin,
+  faFacebook,
+  faInstagram,
+  faSquareXTwitter
+} from '@fortawesome/free-brands-svg-icons';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-3">
-      <Container>
-        <Row>
-          <Col xs={12} md={6}>
-            {/* Add your company name and copyright information here */}
-            <p>&copy; {new Date().getFullYear()} Your Company Name</p>
-          </Col>
-          <Col xs={12} md={6} className="d-flex justify-content-end">
-            {/* Add your social media links here */}
-            <Nav>
-              <Nav.Link href="#" className="text-white mx-2">
-                <i className="fa fa-facebook" aria-hidden="true"></i>
-              </Nav.Link>
-              <Nav.Link href="#" className="text-white mx-2">
-                <i className="fa fa-twitter" aria-hidden="true"></i>
-              </Nav.Link>
-              <Nav.Link href="#" className="text-white mx-2">
-                <i className="fa fa-instagram" aria-hidden="true"></i>
-              </Nav.Link>
-            </Nav>
-          </Col>
-        </Row>
-        <Row className="mt-3">
-          <Col xs={12}>
-            <Nav className="justify-content-center">
-              {/* Add your footer links here */}
-              <Nav.Link >Home</Nav.Link>
-              <Nav.Link >About Us</Nav.Link>
-              <Nav.Link >Contact</Nav.Link>
-              <Nav.Link >Privacy Policy</Nav.Link>
-            </Nav>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
+    <div className="footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 col-sm-4 col-xs-12">
+            <div className="single_footer">
+              <h4>Services</h4>
+              <ul>
+                <li><Link to={"Emory"}>Emory</Link></li>
+                <li><Link to={"Jasbro"}>Jasbro</Link></li>
+                <li><Link to={"BSchool"}>BSchool</Link></li>
+                <li><Link to={"Dawn"}>Dawn</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-md-4 col-sm-4 col-xs-12">
+            <div className="single_footer single_footer_address">
+              <h4>Page Link</h4>
+              <ul>
+                <li><Link to={"/"}>Home</Link></li>
+                <li><Link to={"about"}>About Us</Link></li>
+                <li><Link to={"contact-us"}>Contact Us</Link></li>
+                <li><Link to={"gallery"}>Gallery</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-md-4 col-sm-4 col-xs-12">
+            <div className="single_footer single_footer_address">
+              <h4>KEEP IN TOUCH</h4>
+              <div className="social_profile">
+                <ul>
+                  <li><a href="https://www.facebook.com/share/RR7EV8tCGH5JLpBt/?mibextid=LQQJ4d" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                  <li><a href="https://www.instagram.com/emory_clt?igsh=ZmlxZXB5dnk2aDI0&utm_source=qr" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  <li><a href="https://www.linkedin.com/school/emory-educational-institute/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                  <li><a href="#"><FontAwesomeIcon icon={faSquareXTwitter} /></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <p className="copyright">Copyright © 2024 <a href="#">Emory Calicut</a></p>
+        </div>
+      </div>
+    </div>
   );
 };
 

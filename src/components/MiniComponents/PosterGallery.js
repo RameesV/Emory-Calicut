@@ -1,18 +1,40 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
+import Slider from "react-slick";
 
-function PosterGallery({instaImage}) {
+function PosterGallery({ instaImage }) {
+    const settings = {
+        className: "center",
+        centerMode: true,
+        infinite: true,
+        // centerPadding: "60px",
+        dots: true,
+        arrows: true,
+        // fade: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 3000,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        swipeToSlide: true,
+        // cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 768, // Adjust breakpoint as needed
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
     return (
-        <div>
-            <Row>
-                {instaImage.map((item) => (
-                    <Col lg={4} md={4} sm={12} key={item.id}>
-                        <img className='posters w-100 p-1' src={item.src} alt={item.alt} />
-                    </Col>
-                ))}
-            </Row>
-        </div>
-    )
+        <Slider {...settings} className='mb-5'>
+            {instaImage.map((item) => (
+                <img src={item.src} alt={item.alt} className="gallery-slider-img"  />
+            ))}
+        </Slider>
+    );
 }
 
 export default PosterGallery

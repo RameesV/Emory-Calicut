@@ -4,8 +4,17 @@
     align-items: flex-start;
     border: none;
     text-align: left;
-    .card-subheading{
+
+    .card-subheading {
         padding: 8px 0px;
+    }
+
+    .card-link:hover {
+        background-color: #0d6efd;
+        color: #fff;
+    }
+    .whatsapp-icon{
+        padding: 0 0 0 8px;
     }
 }
 
@@ -13,6 +22,7 @@
 
     .card-body {
         padding: 4px;
+
         .card-title {
             font-size: 16px;
         }

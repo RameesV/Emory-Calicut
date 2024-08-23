@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './About.scss'
+import Slider from "react-slick";
 import { Col, Container, Row } from 'react-bootstrap'
 import founder1 from '../../assets/Images/founder1.jpg'
 import founder2 from '../../assets/Images/founder2.jpg'
@@ -7,12 +8,50 @@ import bannerImg from '../../assets/Images/abt.png'
 import MvvSection from './MvvSection';
 import HeaderComponent from '../MiniComponents/HeaderComponent/HeaderComponent';
 import g3 from '../../assets/Images/bgbg.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faSquareXTwitter } from '@fortawesome/free-brands-svg-icons';
+
+
+const teachers = [
+  { image: founder1, name: 'Teacher 1', institute: 'Institute Name' },
+  { image: founder1, name: 'Teacher 2', institute: 'Institute Name' },
+  { image: founder1, name: 'Teacher 3', institute: 'Institute Name' },
+  { image: founder1, name: 'Teacher 4', institute: 'Institute Name' },
+  { image: founder1, name: 'Teacher 5', institute: 'Institute Name' },
+  { image: founder1, name: 'Teacher 6', institute: 'Institute Name' },
+]
 
 
 function About() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
+  // }, []);
+
+
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 768, // Adjust breakpoint as needed
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className='about-wrapper'>
       <div className="inner-banner mb-3">
@@ -58,43 +97,64 @@ function About() {
         </div>
       </section>
 
-      <section className="team" id="team">
-        <div className="team py-5">
-          <div className="container py-lg-5 AboutPageTeam">
-            <div className="header-title">
-              < HeaderComponent mainHeading={"Co-Founders"} subHeading={"Our Team"} />
+      {/* Keep the Co-Founders Section */}
+      <section>
+        <Container className="d-flex justify-content-center">
+          < HeaderComponent mainHeading={""} subHeading={"Our"} />
+          <span className="bg-watermark">Founders</span>
+        </Container>
+
+        {/* Founders section */}
+        <Container>
+          <div className="cards">
+            <div className="card">
+              <img src={founder1} alt="Founder" />
+              <div className="card-content">
+                <h3>Jabir Moidu E K</h3>
+                <p>Founder</p>
+                <div className="social-links">
+                  <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                  <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+                  <a href="#"><FontAwesomeIcon icon={faSquareXTwitter} /></a>
+                </div>
+              </div>
             </div>
-            <Row className="row team-row ">
-              <Col lg={3} md={3} sm={12}></Col>
-              <Col lg={3} md={3} sm={12} className="team-wrap">
-                <div className="team-member text-center">
-                  <div className="team-img">
-                    <img src={founder1} alt="" className="radius-image" />
-                    <div className="overlay-team">
-                    </div>
-                  </div>
-                  <p className="team-title">Jabir Moidu E K</p>
-                  <p>Founder</p>
-                </div>
-              </Col>
 
-              <Col lg={3} md={3} sm={12} className="team-wrap">
-                <div className="team-member text-center">
-                  <div className="team-img">
-                    <img src={founder2} alt="" className="radius-image" />
-                    <div className="overlay-team">
-                    </div>
-                  </div>
-                  <p className="team-title">Muhammedali KK</p>
-                  <p>Founder</p>
+            <div className="card">
+              <img src={founder2} alt="Founder" />
+              <div className="card-content">
+                <h3>Muhammedali KK</h3>
+                <p>Founder</p>
+                <div className="social-links">
+                  <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                  <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+                  <a href="#"><FontAwesomeIcon icon={faSquareXTwitter} /></a>
                 </div>
-              </Col>
-              <Col lg={3} md={3} sm={12}></Col>
-
-            </Row>
+              </div>
+            </div>
           </div>
-        </div>
+        </Container >
       </section>
+
+      <Container className="d-flex justify-content-center mt-5">
+        < HeaderComponent mainHeading={""} subHeading={"OUR"} />
+        <span className="bg-watermark">Teachers</span>
+      </Container>
+      <Slider {...settings} className='mb-5'>
+        {teachers.map((teacher) => (
+          <Col className='main d-flex align-items-center justify-content-center' lg={4} md={4} sm={12} key={teacher.name}>
+            <div className="profile-card">
+              <div className="img">
+                <img src={teacher.image} />
+              </div>
+              <div className="caption">
+                <h3>{teacher.name}</h3>
+                <p>{teacher.institute}</p>
+              </div>
+            </div>
+          </Col>
+        ))}
+      </Slider>
     </div>
   )
 }

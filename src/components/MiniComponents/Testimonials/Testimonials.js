@@ -7,6 +7,7 @@ import nafiya from '../../../assets/Reviews/r2.jpg';
 import asmina from '../../../assets/Reviews/r3.jpg';
 import shameela from '../../../assets/Reviews/r4.jpg';
 import sajva from '../../../assets/Reviews/r5.jpg';
+import { Container } from 'react-bootstrap';
 
 
 function Testimonials() {
@@ -53,7 +54,9 @@ function Testimonials() {
 
     return (
         <>
-            <HeaderComponent mainHeading={mainHeading} subHeading={subHeading} />
+            <Container>
+                <HeaderComponent mainHeading={mainHeading} subHeading={subHeading} />
+            </Container>
             <SlickSlider testimonials={testimonials} />
         </>
     );

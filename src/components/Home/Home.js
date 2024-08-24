@@ -132,9 +132,9 @@ function Home() {
                 <Counter />
             </section>
             <section className='testimonials-section'>
-                <Container>
+                {/* <Container> */}
                     <Testimonials />
-                </Container>
+                {/* </Container> */}
             </section>
             {/* <section className='map-location-section'>
                 place map here

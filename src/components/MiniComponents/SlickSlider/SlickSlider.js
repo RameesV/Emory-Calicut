@@ -9,7 +9,7 @@ export default function SimpleSlider({ testimonials }) {
         infinite: true,
         // centerPadding: "60px",
         dots: true,
-        arrows: true,
+        arrows: false,
         // fade: true,
         slidesToShow: 2,
         slidesToScroll: 1,

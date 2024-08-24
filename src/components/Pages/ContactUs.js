@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp, faLinkedin, faFacebook, faInstagram, faSquareXTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -8,6 +8,9 @@ import { toast } from "react-hot-toast";
 import { Toaster } from "react-hot-toast";
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
+  }, []);
   const formRef = useRef(null);
   const URL = process.env.REACT_APP_G_SHEET_URL;
 

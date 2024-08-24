@@ -23,9 +23,9 @@ const teachers = [
 
 
 function About() {
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
-  // }, []);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
+  }, []);
 
 
   const settings = {

@@ -45,7 +45,7 @@ function About() {
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     speed: 3000,
     autoplaySpeed: 3000,
     pauseOnHover: true,

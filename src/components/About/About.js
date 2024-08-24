@@ -11,7 +11,7 @@ import { faFacebook, faInstagram, faSquareXTwitter } from '@fortawesome/free-bra
 
 
 // Team Section
-import founder1 from '../../assets/Images/founder1.jpg';
+import founder1 from '../../assets/Images/founder11.jpg';
 import founder2 from '../../assets/Images/founder2.jpg';
 import Irfan from '../../assets/Team/irfan.jpg';
 import Shilpa from '../../assets/Team/shilpa.jpg';
@@ -106,14 +106,13 @@ function About() {
       {/* Keep the Co-Founders Section */}
       <section>
         <Container className="d-flex justify-content-center">
-          < HeaderComponent mainHeading={""} subHeading={"Our"} />
-          <span className="bg-watermark">Founders</span>
+          < HeaderComponent mainHeading={"FOUNDERS"} subHeading={"Our"} />
         </Container>
 
         {/* Founders section */}
         <Container>
-          <div className="cards">
-            <div className="card">
+          <Row className="cards">
+            <Col className="card">
               <img src={founder1} alt="Founder" />
               <div className="card-content">
                 <h3>Jabir Moidu E K</h3>
@@ -124,9 +123,9 @@ function About() {
                   <a href="#"><FontAwesomeIcon icon={faSquareXTwitter} /></a>
                 </div>
               </div>
-            </div>
+            </Col>
 
-            <div className="card">
+            <Col className="card">
               <img src={founder2} alt="Founder" />
               <div className="card-content">
                 <h3>Muhammedali KK</h3>
@@ -137,15 +136,14 @@ function About() {
                   <a href="#"><FontAwesomeIcon icon={faSquareXTwitter} /></a>
                 </div>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </Container >
       </section>
 
       <section className='mt-5'>
         <Container className="d-flex justify-content-center mt-5">
-          < HeaderComponent mainHeading={""} subHeading={"OUR"} />
-          <span className="bg-watermark">Core Team</span>
+          < HeaderComponent mainHeading={"CORE TEAM"} subHeading={"OUR"} />
         </Container>
         <Slider {...settings} className='mb-5'>
           {teachers.map((teacher) => (

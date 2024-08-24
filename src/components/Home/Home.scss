@@ -30,7 +30,8 @@
             .card-body {
                 margin-bottom: 26px;
             }
-            .whatsapp-icon{
+
+            .whatsapp-icon {
                 display: none;
             }
         }
@@ -217,10 +218,17 @@
                     }
 
                     .card-link {
-                        padding: 8px 24px 8px 24px !important;
+                        padding: 8px 18px 8px 18px !important;
                     }
                 }
             }
         }
+    }
+
+    .featured-courses-section {
+        .container {
+            margin-top: 10em;
+        }
+
     }
 }

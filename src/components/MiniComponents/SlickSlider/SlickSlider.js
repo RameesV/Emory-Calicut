@@ -25,6 +25,7 @@ export default function SimpleSlider({ testimonials }) {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    dots: false,
                 },
             },
         ],

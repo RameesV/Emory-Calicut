@@ -169,21 +169,6 @@ img {
     display: block;
 }
 
-.bg-watermark {
-    color: #1f1f1f;
-    font-size: 3rem;
-    font-weight: 800;
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    transform: translatex(-50%) translatey(50%);
-    user-select: none;
-    letter-spacing: 0.5rem;
-    text-decoration: underline #f2709c;
-    text-transform: uppercase;
-}
-
-
 section {
     span {
         text-transform: uppercase;
@@ -323,7 +308,6 @@ section {
         margin: 0 25px;
 
         .img {
-            // position: relative;
             width: 100%;
             height: 100%;
             transition: .6s;

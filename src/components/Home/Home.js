@@ -139,7 +139,7 @@ function Home() {
             {/* <section className='map-location-section'>
                 place map here
             </section> */}
-            <section className='featured-courses-section'>
+            <section className='featured-courses-section mt-5'>
                 <Container>
                     <div>
                         <HeaderComponent mainHeading={"Featured Courses"} subHeading={"READY TO LEARN?"} />

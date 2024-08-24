@@ -13,21 +13,21 @@ import { faFacebook, faInstagram, faSquareXTwitter } from '@fortawesome/free-bra
 // Team Section
 import founder1 from '../../assets/Images/founder1.jpg';
 import founder2 from '../../assets/Images/founder2.jpg';
-import team1 from '../../assets/Team/t1.jpg';
-import team2 from '../../assets/Team/t2.jpg';
-import team3 from '../../assets/Team/t3.jpg';
-import team4 from '../../assets/Team/t4.jpg';
-import team5 from '../../assets/Team/t5.jpg';
-import team6 from '../../assets/Team/t6.jpg';
+import Irfan from '../../assets/Team/irfan.jpg';
+import Shilpa from '../../assets/Team/shilpa.jpg';
+import Anvar from '../../assets/Team/anvar.jpg';
+import Nishana from '../../assets/Team/nishana.jpg';
+import Farsana from '../../assets/Team/farsana.jpg';
+import Muhammedali from '../../assets/Team/muhammadali.jpg';
 
 const teachers = [
   { image: founder1, name: 'Jabir Moidu E K', institute: 'Founder & Teacher' },
-  { image: team1, name: 'Muhammad Irfan M K', institute: 'Head of Department Retail Management' },
-  { image: team2, name: 'Muhammedali KK', institute: 'Founder & Teacher' },
-  { image: team3, name: 'Shilpa Panoor', institute: 'Head of Department Hospital Administration' },
-  { image: team4, name: 'Nishana AP', institute: 'Academic Counselor' },
-  { image: team5, name: 'Farsana NK', institute: 'Academic Counselor' },
-  { image: team6, name: 'Anver MK', institute: 'Principal' },
+  { image: Irfan, name: 'Muhammad Irfan', institute: 'Head of Department Retail Management' },
+  { image: Shilpa, name: 'Shilpa Panoor', institute: 'Head of Department Hospital Administration' },
+  { image: Nishana, name: 'Nishana AP', institute: 'Academic Counselor' },
+  { image: Muhammedali, name: 'Muhammedali KK', institute: 'Founder & Teacher' },
+  { image: Farsana, name: 'Farsana NK', institute: 'Academic Counselor' },
+  { image: Anvar, name: 'Anver MK', institute: 'Principal' },
 ]
 
 
@@ -45,7 +45,7 @@ function About() {
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     speed: 3000,
     autoplaySpeed: 3000,
     pauseOnHover: true,
@@ -149,7 +149,7 @@ function About() {
         </Container>
         <Slider {...settings} className='mb-5'>
           {teachers.map((teacher) => (
-            <Col className='main d-flex align-items-center justify-content-center' lg={4} md={4} sm={12} key={teacher.name}>
+            <div className='main ' lg={4} md={4} sm={12} key={teacher.name}>
               <div className="profile-card">
                 <div className="img">
                   <img src={teacher.image} />
@@ -159,7 +159,7 @@ function About() {
                   <p>{teacher.institute}</p>
                 </div>
               </div>
-            </Col>
+            </div>
           ))}
         </Slider>
       </section >

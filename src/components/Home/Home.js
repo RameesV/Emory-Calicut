@@ -129,8 +129,7 @@ function Home() {
             <section className='service-section'>
                 <div className='service-overlay'></div>
                 <h2>Our Services</h2>
-                <p className='service-description-main'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p className='service-description-main'>Emory offers a comprehensive suite of educational programs, from foundational learning at Dawn to specialized business training at B School. Jasbro complements these academic offerings by providing expert career guidance and placement services
                 </p>
                 <Container>
                     <Service />

@@ -284,32 +284,6 @@ section {
                 transform: scale(1.03);
             }
         }
-
-        .card:nth-child(1) {
-            &::before {
-                top: $position;
-                left: $position;
-            }
-        }
-
-        .card:nth-child(2) {
-            @include mQ(31.25rem) {
-                transform: translatey(15%);
-            }
-
-            &::before {
-                bottom: $position;
-                left: $position;
-                top: auto;
-            }
-        }
-
-        .card:nth-child(3) {
-            &::before {
-                top: $position;
-                left: $position;
-            }
-        }
     }
 }
 

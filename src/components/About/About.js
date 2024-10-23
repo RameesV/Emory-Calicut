@@ -19,6 +19,10 @@ import Anvar from '../../assets/Team/anvar.jpg';
 import Nishana from '../../assets/Team/nishana.jpg';
 import Farsana from '../../assets/Team/farsana.jpg';
 import Muhammedali from '../../assets/Team/muhammadali.jpg';
+import Muhsina from '../../assets/Team/Muhsina.jpg';
+import Dilshana from '../../assets/Team/Dilashna.jpg';
+import Raniya from '../../assets/Team/Raniya.jpg';
+import Muneer from '../../assets/Team/Muneer.jpg';
 
 const teachers = [
   { image: founder1, name: 'Jabir Moidu E K', institute: 'Founder & Teacher' },
@@ -28,6 +32,10 @@ const teachers = [
   { image: Muhammedali, name: 'Muhammedali KK', institute: 'Founder & Teacher' },
   { image: Farsana, name: 'Farsana NK', institute: 'Academic Counselor' },
   { image: Anvar, name: 'Anver MK', institute: 'Principal' },
+  { image: Muhsina, name: 'Muhsina VP', institute: 'Faculty in Hospital Administration' },
+  { image: Dilshana, name: 'Dilshana Sherin', institute: 'Faculty in Hospital Administration' },
+  { image: Raniya, name: 'Raniya A', institute: 'Office Administrator' },
+  { image: Muneer, name: 'Muneer M', institute: 'Faculty of Management' },
 ]
 
 

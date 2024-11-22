@@ -1,0 +1,48 @@
+.posters-wrapper {
+    margin-top: -8rem;
+    position: relative;
+    z-index: 999;
+
+    .poster-title {
+        margin-top: 20px;
+        color: #000;
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .course-section {
+        .course-title-card {
+            background-color: #0d6efd;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .poster-title {
+                text-align: center;
+                font-weight: 700;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+
+        .featured-courses {
+            .row {
+                .col {
+                    padding: 8px;
+
+                    .card {
+                        background: #fff;
+                        height: 100%;
+                        align-items: center;
+                        border: 2px solid #d8f5fa;
+
+                        .card-img-top {
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

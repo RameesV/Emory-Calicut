@@ -1,47 +1,73 @@
-import React, { useRef } from 'react';
+import React, { useEffect } from 'react'
 import './About.scss'
-import Button from 'react-bootstrap/Button'
+import Slider from "react-slick";
 import { Col, Container, Row } from 'react-bootstrap'
-import BgImg from '../../assets/Images/bg 2.png'
+import bannerImg from '../../assets/Images/abt.png'
 import MvvSection from './MvvSection';
+import HeaderComponent from '../MiniComponents/HeaderComponent/HeaderComponent';
+import g3 from '../../assets/Images/bgbg.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faSquareXTwitter } from '@fortawesome/free-brands-svg-icons';
+
+
+// Team Section
+import founder1 from '../../assets/Images/founder11.jpg';
+import founder2 from '../../assets/Images/founder2.jpg';
+import Irfan from '../../assets/Team/irfan.jpg';
+import Shilpa from '../../assets/Team/shilpa.jpg';
+import Anvar from '../../assets/Team/anvar.jpg';
+import Nishana from '../../assets/Team/nishana.jpg';
+import Farsana from '../../assets/Team/farsana.jpg';
+import Muhammedali from '../../assets/Team/muhammadali.jpg';
+import Muhsina from '../../assets/Team/Muhsina.jpg';
+import Dilshana from '../../assets/Team/Dilashna.jpg';
+import Raniya from '../../assets/Team/Raniya.jpg';
+import Muneer from '../../assets/Team/Muneer.jpg';
+
+const teachers = [
+  { image: founder1, name: 'Jabir Moidu E K', institute: 'Founder & Teacher' },
+  { image: Irfan, name: 'Muhammad Irfan', institute: 'Head of Department Retail Management' },
+  { image: Shilpa, name: 'Shilpa Panoor', institute: 'Head of Department Hospital Administration' },
+  { image: Nishana, name: 'Nishana AP', institute: 'Academic Counselor' },
+  { image: Muhammedali, name: 'Muhammedali KK', institute: 'Founder & Teacher' },
+  { image: Farsana, name: 'Farsana NK', institute: 'Academic Counselor' },
+  { image: Anvar, name: 'Anver MK', institute: 'Principal' },
+  { image: Muhsina, name: 'Muhsina VP', institute: 'Faculty in Hospital Administration' },
+  { image: Dilshana, name: 'Dilshana Sherin', institute: 'Faculty in Hospital Administration' },
+  { image: Raniya, name: 'Raniya A', institute: 'Office Administrator' },
+  { image: Muneer, name: 'Muneer M', institute: 'Faculty of Management' },
+]
+
 
 function About() {
-  const aboutData = [
-    {
-      title: "Our Mission",
-      description: "Emory focuses on service through knowledge and to inspire curiosity and discovery for success in a rapidly changing world"
-    },
-    {
-      title: "Vision",
-      description: " To educate young minds and foster ethical, social and moral values through holistic learning and groom them into responsible global citizens."
-    },
-    {
-      title: "Integrity",
-      description: "We act with integrity and honesty in accordance with the highest academic, professional and ethical standards."
-    },
-    {
-      title: "Respect",
-      description: "We respect and honor the dignity of each person, embrace civil discourse and foster a diverse and inclusive community."
-    },
-    {
-      title: "Responsibility",
-      description: "We act responsibly and we are accountable for our decisions, actions and their consequences"
-    },
-    {
-      title: "Discovery",
-      description: "We seek and create new knowledge understanding and foster creativity and innovation for the benefit of our communities, societies and the environmentev"
-    },
-    {
-      title: "Excellence",
-      description: "We strive for excellence in all our endeavors as individuals, an institution and a leader in higher education."
-    },
-    {
-      title: "Community",
-      description: "We work together for the betterment of our institution, the university we affiliated, the communities we serve and the world."
-    }
-  ];
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
+  }, []);
 
 
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 768, // Adjust breakpoint as needed
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div className='about-wrapper'>
@@ -58,77 +84,91 @@ function About() {
           <div className="">
             <div className="py-lg-5 py-md-3 AboutPageAbout">
               <div className="row">
-                <div className="col-lg-6 mb-lg-0 mb-md-5 mb-4">
-                  <img src="https://wp.w3layouts.com/digitaledu/wp-content/themes/digitaledu/assets/images/ab1.jpg"
+                <div className="col-lg-6 mb-lg-0">
+                  <img src={bannerImg}
                     alt="" className="radius-image-full img-fluid" />
                 </div>
                 <div className="col-lg-6 pl-lg-5 ps-4">
-                  <div className="header-title">
-                    <span className="sub-title">About Us</span>
-                    <h3 className="hny-title text-left">Learn at Your Own Place</h3>
-                  </div>
-                  <p className="mt-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
-                    consectetur adipisicing.Nunc id ipsum fringilla, gravida felis vitae. lacinia id, sunt in
-                    culpa quis lacinia. Lorem ipsum dolor, sit amet init elit. Eos,
-                    debitis. Quas minima sunt natus tempore.</p>
+                  < HeaderComponent className="mb-1" mainHeading={"Learn at Your Own Place"} subHeading={"About Us"} />
+                  <p className="mt-3">20+ years of Experience and reputed professionals and their successful journey resulted in the establishment of emory educational institution. we aim at the experimental Learning of the students and the empowerment of rural education the programs provided at emory are plus one plus two degree and p g courses, pre primary teacher training course a part from the academic u.k accredited Montessori teachers training course apart from the Academic programs emory focuses on the morals and values being good Human. emory emphasis on the skill based and service oriented molding of the students.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="" id="about">
-          <div className="py-lg-5 py-md-3 AboutPageWhyChooseUs">
-            <img src="https://wp.w3layouts.com/digitaledu/wp-content/themes/digitaledu/assets/images/ab1.jpg"
-              alt="" className="why-choose-banner" />
+      </Container>
+      <section className="" id="about">
+        <div className="py-lg-5 py-md-3 AboutPageWhyChooseUs">
+          <img src={g3} alt="" className="why-choose-banner" />
+          <Container>
             <div className="mb-4 pr-lg-5 pe-4">
               <div className="header-title mb-md-5 mb-4">
-                <span className="sub-title">Why Choose Us</span>
-                <h3 className="hny-title text-left">
-                  Educating Champions of a Just and Sustainable world
-                </h3>
+                < HeaderComponent mainHeading={"Educating Champions of a Just and Sustainable world"} subHeading={"Why Choose Us"} />
               </div>
             </div>
             <MvvSection />
-          </div>
-        </section>
+          </Container>
+        </div>
+      </section>
 
-        <section className="team" id="team">
-          <div className="team py-5">
-            <div className="container py-lg-5 AboutPageTeam">
-              <div className="header-title mb-4">
-                <span className="sub-title">Our Team</span>
-                <h3 className="hny-title text-left">Co Founders</h3>
-              </div>
-              <div className="row team-row ">
-                <div className="col-lg-3 col-6 team-wrap mt-lg-5 mt-4">
-                  <div className="team-member text-center">
-                    <div className="team-img">
-                      <img src="https://wp.w3layouts.com/digitaledu/wp-content/themes/digitaledu/assets/images/team1.jpg" alt="" className="radius-image" />
-                      <div className="overlay-team">
-                      </div>
-                    </div>
-                    <p className="team-title">
-                      Daniel jacobs</p>
-                    <p>Instructor</p>
-                  </div>
+      {/* Keep the Co-Founders Section */}
+      <section>
+        <Container className="d-flex justify-content-center">
+          < HeaderComponent mainHeading={"FOUNDERS"} subHeading={"Our"} />
+        </Container>
+
+        {/* Founders section */}
+        <Container>
+          <Row className="cards">
+            <Col className="card">
+              <img src={founder1} alt="Founder" />
+              <div className="card-content">
+                <h3>Jabir Moidu E K</h3>
+                <p>Founder</p>
+                <div className="social-links">
+                  <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                  <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+                  <a href="#"><FontAwesomeIcon icon={faSquareXTwitter} /></a>
                 </div>
+              </div>
+            </Col>
 
-                <div className="col-lg-3 col-6 team-wrap mt-lg-5 mt-4">
-                  <div className="team-member text-center">
-                    <div className="team-img">
-                      <img src="https://wp.w3layouts.com/digitaledu/wp-content/themes/digitaledu/assets/images/team3.jpg" alt="" className="radius-image" />
-                      <div className="overlay-team">
-                      </div>
-                    </div>
-                    <p className="team-title">
-                      Claire Daniel</p>
-                    <p>Instructor</p>
-                  </div>
+            <Col className="card">
+              <img src={founder2} alt="Founder" />
+              <div className="card-content">
+                <h3>Muhammedali KK</h3>
+                <p>Founder</p>
+                <div className="social-links">
+                  <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                  <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+                  <a href="#"><FontAwesomeIcon icon={faSquareXTwitter} /></a>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container >
+      </section>
+
+      <section className='mt-5'>
+        <Container className="d-flex justify-content-center mt-5">
+          < HeaderComponent mainHeading={"CORE TEAM"} subHeading={"OUR"} />
+        </Container>
+        <Slider {...settings} className='mb-5'>
+          {teachers.map((teacher) => (
+            <div className='main ' lg={4} md={4} sm={12} key={teacher.name}>
+              <div className="profile-card">
+                <div className="img">
+                  <img src={teacher.image} />
+                </div>
+                <div className="caption">
+                  <h3>{teacher.name}</h3>
+                  <p>{teacher.institute}</p>
                 </div>
               </div>
             </div>
-          </div></section>
-      </Container>
+          ))}
+        </Slider>
+      </section >
     </div>
   )
 }

@@ -18,7 +18,7 @@ const Counter = () => {
   const counterContainerRef = useRef(null);
 
   const startCounters = () => {
-    const intervals = counterData.map((item) => {
+    const intervals = counterData.map((item, index) => {
       const intervalId = setInterval(() => {
         setCounterData((prevData) =>
           prevData.map((data) =>
@@ -72,8 +72,8 @@ const Counter = () => {
         <Container className='mt-5'>
           <Row>
             {counterData.map((item) => (
-              <Col className='col' sm={6} md={3} lg={3}>
-                <div key={item.id} className="counter">
+              <Col key={item.id} className='col' sm={6} md={3} lg={3}>
+                <div  className="counter">
                   <img src={item.src} alt="Icon" />
                   <div className="timer count-title count-number mt-3">
                     <p>{item.count}+</p>

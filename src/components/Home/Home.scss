@@ -2,9 +2,6 @@
     background: #f8f9fa;
 }
 
-.offcanvas {
-    height: 35vh;
-}
 
 .values-section {
     h1 {
@@ -21,6 +18,7 @@
             background-color: #fff;
             border-radius: 20px;
             height: 100%;
+            align-items: center;
 
             .card-img-top {
                 height: 200px;
@@ -33,25 +31,8 @@
                 margin-bottom: 26px;
             }
 
-            .card-link {
-                text-decoration: none;
-                color: #000;
-                margin-left: 16px;
-                padding: 6px;
-                border-radius: 8px;
-                border: 1px solid #000;
-                margin-bottom: 8px;
-
-            }
-        }
-
-        .card:hover {
-            background-color: #000;
-            color: #fff;
-
-            .card-link {
-                border: 1px solid #fff;
-                color: #fff;
+            .whatsapp-icon {
+                display: none;
             }
         }
     }
@@ -112,7 +93,6 @@
     background-position: center;
     background-size: cover;
     margin: 64px 0 0 0;
-    border-radius: 30px;
     padding: 64px 32px;
     text-align: justify;
     display: flex;
@@ -149,7 +129,6 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
     top: 0;
     overflow: hidden;
     position: absolute;
@@ -186,6 +165,7 @@
                     background: #fff;
                     height: 100%;
                     align-items: center;
+                    border: 2px solid #d8f5fa;
 
                     .card-img-top {
                         height: 200px;
@@ -197,14 +177,6 @@
                             text-transform: uppercase;
                             font-weight: bold;
                         }
-                    }
-
-                    .card-link {
-                        border-style: solid;
-                        border-radius: 025px 025px 0px 025px;
-                        padding: 12px 48px 12px 48px;
-                        text-decoration: none;
-                        margin-bottom: 12px;
                     }
 
                     .card-link:hover {
@@ -246,10 +218,17 @@
                     }
 
                     .card-link {
-                        padding: 8px 24px 8px 24px !important;
+                        padding: 8px 18px 8px 18px !important;
                     }
                 }
             }
         }
+    }
+
+    .featured-courses-section {
+        .container {
+            margin-top: 10em;
+        }
+
     }
 }

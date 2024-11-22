@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CarouselFade from '../Carousel/MyCarousel'
 import AboutSection from '../About/AboutSection'
 import './Home.scss'
@@ -7,68 +7,72 @@ import Service from '../MiniComponents/Service/Service'
 import MyCards from '../MiniComponents/Cards/MyCards'
 import Counter from '../MiniComponents/Counter/Counter'
 import Testimonials from '../MiniComponents/Testimonials/Testimonials'
-import Hero1 from '../../assets/Images/hero1.jpg'
-import Hero3 from '../../assets/Images/hero3.jpg'
-import Hero4 from '../../assets/Images/hero4.jpg'
+import Hero1 from '../../assets/Images/c6.jpg'
+import Hero3 from '../../assets/Images/c5.jpg'
+import Hero4 from '../../assets/Images/c4.jpg'
+import featuredImage from '../../assets/Images/Featured Courses.png'
+import HeaderComponent from '../MiniComponents/HeaderComponent/HeaderComponent'
 
 function Home() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
+    }, []);
     const carouselHomePage = [
         {
             id: 1,
-            src: Hero1
+            src: Hero1,
+            headline: "Explore a world of opportunities.",
+            description: "Discover a diverse range of courses and institutions across India and abroad."
         },
         {
             id: 2,
-            src: Hero3
+            src: Hero3,
+            headline: "Personalized Pathways to Success",
+            description: "Tailor your education with our personalized guidance and expert counseling.",
         },
         {
             id: 3,
-            src: Hero4
+            src: Hero4,
+            headline: "Achieve your dreams with us",
+            description: "Benefit from our internationally accredited programs and partnerships.",
         },
 
     ]
 
     const coursesData = [
         {
-            "title": "PG diploma in hospital administration and healthcare management",
-            "description": "Gain the skills and knowledge to excel in the healthcare management field.",
-            "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/mision.jpg",
-            "buttonName": "Enquire Now"
-        },
-        {
-            "title": "diploma in hospital administration and healthcare management",
+            "title": "Diploma in Hospital Administration and Healthcare Management",
             "description": "A shorter program focused on the essentials of healthcare administration.",
-            "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/vision.jpg",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( Diploma in Hospital Administration and Healthcare Management )",
+            "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "Montessori teacher training course",
-            "description": "Become a qualified Montessori teacher and nurture young minds.",
-            "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/responsibility.jpg",
+            "title": "+1, +2 Regular Courses",
+            "description": "Regular Courses in Science, Commerce, and Humanities",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course (+1, +2 Regular Courses)",
+            "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "DIPLOMA IN HOTEL MANAGEMENT AND CATERING TECHNOLOGY",
-            "description": "Prepare for a career in the hospitality industry.",
-            "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/responsibility.jpg",
-            "buttonName": "Admission CLosed"
-        },
-        {
-            "title": "CERTIFICATION COURSE BEUTY AND BRIDAL MAKEUP",
-            "description": "Learn the art of bridal makeup and enhance your skills.",
-            "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/responsibility.jpg",
+            "title": "BOSSE",
+            "description": "6 Month SSLC and Plus Two",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( BOSSE )",
+            "src": featuredImage,
             "buttonName": "Enquire Now"
         },
         {
-            "title": "CERTIFICATION COURSE IN BEUTY AND COSMETOLOGY",
-            "description": "Expand your knowledge and expertise in the beauty industry.",
-            "pageLink": "/about",
-            "src": "https://sadectip.sirv.com/responsibility.jpg",
+            "title": "B.Ed",
+            "description": "A two-year teacher education program for aspiring educators.",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( B.Ed )",
+            "src": featuredImage,
+            "buttonName": "Enquire Now"
+        },
+        {
+            "title": "Medical Coding",
+            "description": "Assigning numerical codes to medical diagnoses and procedures.",
+            "pageLink": "https://wa.me/+917306058474?text=Hey, I would like to know more about the course ( Medical Coding )",
+            "src": featuredImage,
             "buttonName": "Enquire Now"
         }
     ]
@@ -112,34 +116,33 @@ function Home() {
                         </Col>
                     </Row>
                 </section>
-                {/* <MvvSection /> */}
-                <section className='service-section'>
-                    <div className='service-overlay'></div>
-                    <h2>Our Services</h2>
-                    <p className='service-description-main'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <Service />
-                </section>
             </Container>
+
+            {/* <MvvSection /> */}
+            <section className='service-section'>
+                <div className='service-overlay'></div>
+                <h2>Our Services</h2>
+                <p className='service-description-main'>Emory offers a comprehensive suite of educational programs, from foundational learning at Dawn to specialized business training at B School. Jasbro complements these academic offerings by providing expert career guidance and placement services
+                </p>
+                <Container>
+                    <Service />
+                </Container>
+            </section>
             <section className='counter-section mt-5 mb-5'>
                 <Counter />
             </section>
             <section className='testimonials-section'>
-                <Container>
+                {/* <Container> */}
                     <Testimonials />
-                </Container>
+                {/* </Container> */}
             </section>
-            <section className='map-location-section'>
+            {/* <section className='map-location-section'>
                 place map here
-            </section>
-            <section className='featured-courses-section'>
+            </section> */}
+            <section className='featured-courses-section mt-5'>
                 <Container>
                     <div>
-                        <h2>READY TO LEARN?</h2>
-                    </div>
-                    <div className='section-heading mb-5'>
-                        <h4>Featured Courses</h4>
+                        <HeaderComponent mainHeading={"Featured Courses"} subHeading={"READY TO LEARN?"} />
                     </div>
                     <div className='featured-courses'>
                         <Row>

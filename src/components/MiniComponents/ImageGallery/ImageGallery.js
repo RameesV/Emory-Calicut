@@ -34,6 +34,13 @@ import img31 from '../../../assets/Gallery/31.jpg'
 import img32 from '../../../assets/Gallery/32.jpg'
 import img33 from '../../../assets/Gallery/33.jpg'
 import img34 from '../../../assets/Gallery/34.jpg'
+import img40 from '../../../assets/Gallery/40.jpg'
+import img41 from '../../../assets/Gallery/41.jpg'
+import img42 from '../../../assets/Gallery/42.jpg'
+import img43 from '../../../assets/Gallery/43.jpg'
+import img44 from '../../../assets/Gallery/44.jpg'
+import img45 from '../../../assets/Gallery/45.jpg'
+import img46 from '../../../assets/Gallery/46.jpg'
 
 export default function Gallery() {
   const imageUrls = [
@@ -70,7 +77,14 @@ export default function Gallery() {
     {id: 31,src: img31},
     {id: 32,src: img32},
     {id: 33,src: img33},
-    {id: 34,src: img34 }
+    {id: 34,src: img34},
+    {id: 40,src: img40},
+    {id: 41,src: img41},
+    {id: 42,src: img42},
+    {id: 43,src: img43},
+    {id: 44,src: img44},
+    {id: 45,src: img45},
+    {id: 46,src: img46}
   ];
 
   const [isFullscreenOpen, setIsFullscreenOpen] = useState(false);

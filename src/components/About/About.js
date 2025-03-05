@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import './About.scss'
-import Slider from "react-slick";
 import { Col, Container, Row } from 'react-bootstrap'
 import bannerImg from '../../assets/Images/abt.png'
 import MvvSection from './MvvSection';
@@ -26,12 +25,12 @@ import Muneer from '../../assets/Team/Muneer.jpg';
 
 const teachers = [
   { image: founder1, name: 'Jabir Moidu E K', institute: 'Founder & Teacher' },
+  { image: Muhammedali, name: 'Muhammedali KK', institute: 'Founder & Teacher' },
+  { image: Anvar, name: 'Anver MK', institute: 'Principal' },
   { image: Irfan, name: 'Muhammad Irfan', institute: 'Head of Department Retail Management' },
   { image: Shilpa, name: 'Shilpa Panoor', institute: 'Head of Department Hospital Administration' },
   { image: Nishana, name: 'Nishana AP', institute: 'Academic Counselor' },
-  { image: Muhammedali, name: 'Muhammedali KK', institute: 'Founder & Teacher' },
   { image: Farsana, name: 'Farsana NK', institute: 'Academic Counselor' },
-  { image: Anvar, name: 'Anver MK', institute: 'Principal' },
   { image: Muhsina, name: 'Muhsina VP', institute: 'Faculty in Hospital Administration' },
   { image: Dilshana, name: 'Dilshana Sherin', institute: 'Faculty in Hospital Administration' },
   { image: Raniya, name: 'Raniya A', institute: 'Office Administrator' },
@@ -153,21 +152,21 @@ function About() {
         <Container className="d-flex justify-content-center mt-5">
           < HeaderComponent mainHeading={"CORE TEAM"} subHeading={"OUR"} />
         </Container>
-        <Slider {...settings} className='mb-5'>
-          {teachers.map((teacher) => (
-            <div className='main ' lg={4} md={4} sm={12} key={teacher.name}>
-              <div className="profile-card">
-                <div className="img">
-                  <img src={teacher.image} />
-                </div>
-                <div className="caption">
-                  <h3>{teacher.name}</h3>
-                  <p>{teacher.institute}</p>
+        <div className='row gap-3 align-items-center justify-content-center'>
+            {teachers.map((teacher) => (
+              <div className='main col-lg-3 col-md-4 col-sm-12' key={teacher.name}> 
+                <div className="profile-card">
+                  <div className="img">
+                    <img src={teacher.image} />
+                  </div>
+                  <div className="caption">
+                    <h3>{teacher.name}</h3>
+                    <p>{teacher.institute}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+        </div>
       </section >
     </div>
   )

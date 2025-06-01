@@ -298,8 +298,8 @@ section {
 
     .profile-card {
         position: relative;
-        width: 220px;
-        height: 220px;
+        width: 260px;
+        height: 260px;
         background: #f2709c;
         background: -webkit-linear-gradient(to left, #ff9472, #f2709c);
         background: linear-gradient(to left, #ff9472, #f2709c);
@@ -353,6 +353,7 @@ section {
 
         .img {
             transform: translateY(-60px);
+            height: 220px;
 
             img {
                 border-radius: 10px;

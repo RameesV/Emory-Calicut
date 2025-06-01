@@ -14,7 +14,6 @@ import founder1 from '../../assets/Images/founder11.jpg';
 import founder2 from '../../assets/Images/founder2.jpg';
 import Irfan from '../../assets/Team/irfan.jpg';
 import Shilpa from '../../assets/Team/shilpa.jpg';
-import Anvar from '../../assets/Team/anvar.jpg';
 import Nishana from '../../assets/Team/nishana.jpg';
 import Farsana from '../../assets/Team/farsana.jpg';
 import Muhammedali from '../../assets/Team/muhammadali.jpg';
@@ -22,19 +21,38 @@ import Muhsina from '../../assets/Team/Muhsina.jpg';
 import Dilshana from '../../assets/Team/Dilashna.jpg';
 import Raniya from '../../assets/Team/Raniya.jpg';
 import Muneer from '../../assets/Team/Muneer.jpg';
+import Adil from '../../assets/Team/Adil.jpeg';
+import Arthana from '../../assets/Team/Arthana.jpeg';
+import Bishara from '../../assets/Team/Bishara.jpeg';
+import FathimaKC from '../../assets/Team/FathimaKC.jpeg';
+import FidaFathimaPP from '../../assets/Team/FidaFathimaPP.jpeg';
+import NasriyaMK from '../../assets/Team/NasriyaMK.jpeg';
+import Rafna from '../../assets/Team/Rafna.jpeg';
+import ShahanaSherinKK from '../../assets/Team/ShahanaSherinKK.jpeg';
+import ShanaSherinKK from '../../assets/Team/ShanaSherinKK.jpeg';
+import Soorya from '../../assets/Team/Soorya.jpeg';
 
 const teachers = [
   { image: founder1, name: 'Jabir Moidu E K', institute: 'Founder & Teacher' },
   { image: Muhammedali, name: 'Muhammedali KK', institute: 'Founder & Teacher' },
-  { image: Anvar, name: 'Anver MK', institute: 'Principal' },
   { image: Irfan, name: 'Muhammad Irfan', institute: 'Head of Department Retail Management' },
+  { image: Muneer, name: 'Muneer M', institute: 'Faculty of Management' },
   { image: Shilpa, name: 'Shilpa Panoor', institute: 'Head of Department Hospital Administration' },
   { image: Nishana, name: 'Nishana AP', institute: 'Academic Counselor' },
   { image: Farsana, name: 'Farsana NK', institute: 'Academic Counselor' },
   { image: Muhsina, name: 'Muhsina VP', institute: 'Faculty in Hospital Administration' },
   { image: Dilshana, name: 'Dilshana Sherin', institute: 'Faculty in Hospital Administration' },
   { image: Raniya, name: 'Raniya A', institute: 'Office Administrator' },
-  { image: Muneer, name: 'Muneer M', institute: 'Faculty of Management' },
+  { image: Adil, name: 'Adil', institute: 'PRO' },
+  { image: Arthana, name: 'Arthana', institute: 'Office Administrator' },
+  { image: Bishara, name: 'Bishara', institute: 'MTTC CORDINATOR' },
+  { image: FathimaKC, name: 'Fathima KC', institute: 'Office Administrator' },
+  { image: FidaFathimaPP, name: 'Fida Fathima PP', institute: 'Office Administrator' },
+  { image: NasriyaMK, name: 'Nasriya MK', institute: 'Office Administrator' },
+  { image: Rafna, name: 'Rafna', institute: 'Academic Head Thalassery' },
+  { image: ShahanaSherinKK, name: 'Shahana Sherin KK', institute: 'Office Administrator' },
+  { image: ShanaSherinKK, name: 'Shana Sherin KK', institute: 'Department of Hospital Administration' },
+  { image: Soorya, name: 'Soorya', institute: 'Branch Manager' },
 ]
 
 

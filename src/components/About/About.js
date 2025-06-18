@@ -33,7 +33,7 @@ import ShanaSherinKK from '../../assets/Team/ShanaSherinKK.jpeg';
 import Soorya from '../../assets/Team/Soorya.jpeg';
 
 const teachers = [
-  { image: founder1, name: 'Jabir Moidu E K', institute: 'Founder & Teacher' },
+  { image: founder1, name: 'Dr. Jabir Moidu E K', institute: 'Founder & Teacher' },
   { image: Muhammedali, name: 'Muhammedali KK', institute: 'Founder & Teacher' },
   { image: Irfan, name: 'Muhammad Irfan', institute: 'Head of Department Retail Management' },
   { image: Muneer, name: 'Muneer M', institute: 'Faculty of Management' },
@@ -140,7 +140,7 @@ function About() {
             <Col className="card">
               <img src={founder1} alt="Founder" />
               <div className="card-content">
-                <h3>Jabir Moidu E K</h3>
+                <h3>Dr. Jabir Moidu E K</h3>
                 <p>Founder</p>
                 <div className="social-links">
                   <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>

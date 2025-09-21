@@ -6,6 +6,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom';
 import '../CommonStyles.scss';
 import { useState } from 'react';
+import logo from '../../assets/Brands/emory black.png';
 
 const Header = () => {
     const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -18,7 +19,7 @@ const Header = () => {
                 <Navbar key={expand} expand={expand} className="bg-body-tertiary sticky-top h-55 navbar-glassy">
                     <Container className='navbar-container'>
                         <Navbar.Brand as={Link} to='/'>
-                            <img className='brand-logo' src='https://sadectip.sirv.com/React%20Project%20Files/logo-black.png'  alt='loading...'/>
+                            <img className='brand-logo' src={logo}  alt='loading...'/>
                             {/* Brand Logo */}
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={() => setShowOffcanvas(true)} />
